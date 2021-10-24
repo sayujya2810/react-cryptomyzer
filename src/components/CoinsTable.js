@@ -4,7 +4,6 @@ import { CoinList } from '../config/api'
 import { useState, useEffect } from 'react'
 import { CryptoState } from '../CryptoContext'
 import { Container, createTheme, LinearProgress, TableCell, TableContainer, Table, TableHead, TableRow, TextField, ThemeProvider, Typography, TableBody, makeStyles } from '@material-ui/core'
-import { Classnames } from 'react-alice-carousel'
 import { useHistory } from 'react-router-dom'
 import { numberWithCommas } from './Banner/Carousel'
 import { Pagination } from '@material-ui/lab'
@@ -19,6 +18,7 @@ const CoinsTable = () => {
     const history = useHistory()
 
     const {currency, symbol} = CryptoState()
+
     const fetchCoins = async() => {
         setLoading(true)
         const { data } = await axios.get(CoinList(currency))
@@ -112,7 +112,7 @@ const CoinsTable = () => {
                                         const profit = row.price_change_percentage_24h > 0
                                         return (
                                             <TableRow
-                                                onClick={() => history.pushState(`/coins/${row.id}`)}
+                                                onClick={() => history.push(`/coins/${row.id}`)}
                                                 className={classes.row}
                                                 key={row.name}>
 
