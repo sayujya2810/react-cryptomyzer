@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+This is a full-fledge Crypto Currency site, in which you can track your favourite Crypto currency. 
+in later versions you can login and Track particular currency and listen for trends.
+
+
+
+
+
+
+#Instructions and Blah Blah....
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
