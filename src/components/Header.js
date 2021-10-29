@@ -49,7 +49,7 @@ import {
                 variant="h6"
                 className={classes.title}
               >
-                Crypto Hunter
+                Cryptomyzer
               </Typography>
               {/* <Button color="inherit">Login</Button> */}
               <Select
